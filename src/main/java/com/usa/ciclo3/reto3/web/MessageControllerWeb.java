@@ -49,7 +49,7 @@ public class MessageControllerWeb {
 
         return messageServices.save(message);
     }
-    /*@PutMapping("/update")
+    @PutMapping("/update")
     @ResponseStatus(HttpStatus.CREATED)
     public Message update(@RequestBody Message message) {
 
@@ -61,7 +61,7 @@ public class MessageControllerWeb {
     public boolean delete(@PathVariable("idMessage") int idMessage) {
 
         return messageServices.deleteMessage(idMessage);
-    }*/
+    }
 
 }
 

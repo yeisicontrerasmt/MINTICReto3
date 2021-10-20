@@ -45,7 +45,7 @@ public class ClientControllerWeb {
 
         return clientServices.save(client);
     }
-    /*@PutMapping("/update")
+    @PutMapping("/update")
     @ResponseStatus(HttpStatus.CREATED)
     public Client update(@RequestBody Client client) {
 
@@ -58,7 +58,7 @@ public class ClientControllerWeb {
     public boolean delete(@PathVariable("idClient") int idClient) {
 
         return clientServices.deleteClient(idClient);
-    }*/
+    }
 
 
 
