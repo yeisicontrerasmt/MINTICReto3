@@ -32,12 +32,12 @@ public class Message implements Serializable {
                 this.messageText = messageText;
         }
 
-        public Partyroom getPartyroom() {
-                return partyroom;
+        public Motorbike getMotorbike() {
+                return motorbike;
         }
 
-        public void setPartyroom(Partyroom partyroom) {
-                this.partyroom = partyroom;
+        public void setMotorbike(Motorbike motorbike) {
+                this.motorbike = motorbike;
         }
 
         public Client getClient() {
@@ -49,9 +49,9 @@ public class Message implements Serializable {
         }
 
         @ManyToOne
-        @JoinColumn(name="idPartyroom")
+        @JoinColumn(name="idMotorbike")
         @JsonIgnoreProperties({"messages", "client", "reservations"})
-        private Partyroom partyroom;
+        private Motorbike motorbike;
 
         @ManyToOne
         @JoinColumn(name="idClient")
